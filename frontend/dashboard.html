@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <div class="profile">
+        <img src="profile-placeholder.png" alt="Profile Picture" class="profile-pic" />
+        <p id="bio">Bio: This is your bio</p>
+      </div>
+    </header>
+    <section>
+      <form id="post-form">
+        <textarea id="post-content" placeholder="What's on your mind?" required></textarea>
+        <input type="file" id="post-image" accept="image/*" />
+        <button type="submit">Post</button>
+      </form>
+      <div id="posts-container"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
